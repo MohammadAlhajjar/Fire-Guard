@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\acc\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\xampp\php;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\OpenSSL-Win64\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\acc\scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\acc\AppData\Local\Microsoft\WindowsApps;C:\Users\acc\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acc\AppData\Roaming\npm;C:\Users\acc\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PhpStorm 2023.2.3\bin;C:\Users\acc\AppData\Roaming\Composer\vendor\bin;C:\Users\acc\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+      "devDependencies": {
+          "@babel/core": "^7.17.0",
+          "@babel/preset-env": "^7.16.0",
+          "@hotwired/stimulus": "^3.0.0",
+          "@symfony/stimulus-bridge": "^3.2.0",
+          "@symfony/webpack-encore": "^4.0.0",
+          "core-js": "^3.23.0",
+          "regenerator-runtime": "^0.13.9",
+          "webpack": "^5.74.0",
+          "webpack-cli": "^4.10.0",
+          "webpack-notifier": "^1.15.0"
+      },
+      "license": "UNLICENSED",
+      "private": true,
+      "scripts": {
+          "dev-server": "encore dev-server",
+          "dev": "encore dev",
+          "watch": "encore dev --watch",
+          "build": "encore production --progress"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
