@@ -190,6 +190,7 @@ class MapAndLocationsPage extends StatelessWidget {
                                 );
                               },
                             ),
+
                             // ! fires
                             ...List.generate(
                               state.collectionSystemModel.devices!.length,
@@ -198,6 +199,13 @@ class MapAndLocationsPage extends StatelessWidget {
                                     .collectionSystemModel.devices![index]!;
                                 if (device.deviceValues!.status ==
                                     DeviceStatus.Dangerous.name) {
+                                  if (state
+                                      .collectionSystemModel.fires!.isEmpty) {
+                                    return Marker(
+                                      point: LatLng(0, 0),
+                                      child: Container(),
+                                    );
+                                  }
                                   return Marker(
                                     point: LatLng(
                                       double.parse(
